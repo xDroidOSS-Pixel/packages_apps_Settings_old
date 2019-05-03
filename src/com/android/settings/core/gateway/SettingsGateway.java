@@ -180,6 +180,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.xd.mnmlist.Dashboard;
 
+import com.android.settings.livedisplay.LiveDisplaySettings;
 import ink.kscope.settings.wifi.tether.WifiTetherClientManager;
 
 import com.google.android.settings.security.SecurityHubDashboard;
@@ -353,7 +354,8 @@ public class SettingsGateway {
             TurnScreenOnDetails.class.getName(),
             Dashboard.class.getName(),
             WifiTetherClientManager.class.getName(),
-            SecurityHubDashboard.class.getName()
+            SecurityHubDashboard.class.getName(),
+            LiveDisplaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
