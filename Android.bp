@@ -104,6 +104,7 @@ android_library {
         "accountfeatureprovidergoogle",
         "SettingsLibMainSwitchPreference",
         "faceunlock_framework",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     libs: [
