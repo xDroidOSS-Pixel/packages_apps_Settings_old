@@ -105,6 +105,7 @@ android_library {
         "accountfeatureprovidergoogle",
         "google-securityhub",
         "SettingsLibMainSwitchPreference",
+        "vendor.lineage.fastcharge-V1.0-java",
     ],
 
     libs: [
