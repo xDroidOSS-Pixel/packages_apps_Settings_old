@@ -228,4 +228,10 @@
     <string name="sleep_mode_sensors_toggle_title">Matikan Sensor</string>
     <string name="sleep_mode_sensors_toggle_summary">Matikan sensor ketika mode tidur diaktifkan</string>
     <string name="sleep_mode_display_text">Mode tidur memungkinkan Anda menonaktifkan layanan tertentu untuk membantu menghemat baterai dan mengheningkan ponsel saat Anda tidur.</string>
+
+    <!-- VPN app management screen, global VPN -->
+    <string name="global_vpn_title">VPN Global</string>
+    <string name="global_vpn_summary">Paksa semua lalu lintas di perangkat melalui VPN ini, termasuk profil kerja dan pengguna lain.</string>
+    <string name="global_vpn_summary_on">Paksa semua lalu lintas di perangkat melalui VPN ini, termasuk profil kerja dan pengguna lain. Catatan: Saat diaktifkan, Anda tidak akan dapat menggunakan VPN terpisah di profil kerja atau pengguna lain</string>
+    <string name="global_vpn_summary_any_vpn_active">Anda harus menonaktifkan semua koneksi VPN aktif terlebih dahulu untuk mengaktifkan ini</string>
 </resources>
