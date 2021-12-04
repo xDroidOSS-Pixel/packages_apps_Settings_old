@@ -102,6 +102,7 @@ android_library {
         "Settings-change-ids",
         "SystemUIUnfoldLib",
         "xd.xdui-preference",
+        "accountfeatureprovidergoogle",
     ],
 
     libs: [
@@ -156,4 +157,10 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+java_import {
+    name: "accountfeatureprovidergoogle",
+    jars: ["libs/accountfeatureprovidergoogle.jar"],
+    sdk_version: "current",
 }
