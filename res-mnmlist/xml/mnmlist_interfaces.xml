@@ -34,5 +34,14 @@
           android:title="@string/network_traffic_title"
           android:summary="@string/network_traffic_summary"
           android:fragment="com.xd.mnmlist.fragments.NetworkTrafficSettings" />
-    
+
+     <PreferenceCategory
+        android:title="@string/customization_monet_title">
+
+          <com.xd.mnmlist.preferences.SecureSettingSwitchPreference
+               android:key="system_black_theme"
+               android:title="@string/system_black_theme_title"
+               android:summary="@string/system_black_theme_summary"
+               android:defaultValue="false" />
+     </PreferenceCategory>
 </PreferenceScreen>
