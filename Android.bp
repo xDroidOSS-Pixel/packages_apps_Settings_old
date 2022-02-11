@@ -105,6 +105,7 @@ android_library {
         "accountfeatureprovidergoogle",
         "google-securityhub",
         "SettingsLibMainSwitchPreference",
+        "faceunlock_framework",
     ],
 
     libs: [
