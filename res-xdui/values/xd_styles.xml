@@ -132,10 +132,19 @@
 
     <style name="xd_dashboard_pref_card_sin">
         <item name="android:layout_marginTop">@dimen/xd_pref_card_horizontal_padding</item>
-        <item name="android:layout_marginBottom">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginStart">@dimen/xd_pref_card_horizontal_padding</item>
         <item name="android:layout_marginEnd">@dimen/xd_pref_card_horizontal_padding</item>
         <item name="android:background">@drawable/xd_pref_card_sin</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="xd_dashboard_pref_sin-accent">
+        <item name="android:layout_marginTop">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginBottom">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginStart">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/xd_pref_card_horizontal_padding</item>
+        <item name="android:background">@drawable/xd_pref_card_sin-accent</item>
         <item name="android:clipToPadding">false</item>
     </style>
 
