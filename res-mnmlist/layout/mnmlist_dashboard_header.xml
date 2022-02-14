@@ -15,12 +15,12 @@
      android:id="@+id/container"
      style="@style/xd_pref_card_sin"
      android:layout_width="match_parent"
-     android:layout_height="175dp">
+     android:layout_height="185dp">
 
      <com.google.android.material.card.MaterialCardView
           android:id="@+id/xd_about_phone_header_illustration"
           android:layout_width="match_parent"
-          android:layout_height="175dp"
+          android:layout_height="185dp"
           app:cardElevation="0dp"
           app:cardBackgroundColor="@android:color/transparent"
           app:cardCornerRadius="@dimen/xd_pref_card_radius">
@@ -44,14 +44,23 @@
                android:layout_height="wrap_content"
                android:layout_gravity="start|center"
                android:layout_marginStart="16dp"
-               android:layout_marginEnd="16dp"
+               android:layout_marginEnd="32dp"
                android:layout_weight="1">
+
+               <ImageView
+                    android:id="@+id/mnmlist_dashboard_icon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/xd_icon"
+                    android:tint="@color/xd_background1"/>
 
                <TextView
                     android:id="@+id/mnmlist_dashboard_title"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/mnmlist_dashboard_title"
+                    android:layout_below="@id/mnmlist_dashboard_icon"
+                    android:layout_alignStart="@id/mnmlist_dashboard_icon"
                     style="@style/xd_text_primary_medium"/>
             
                <TextView
