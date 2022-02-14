@@ -31,20 +31,20 @@ public class xdCardPrefWallBlur extends ImageView {
     public xdCardPrefWallBlur(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         contextM = context;
-        setRenderEffect(RenderEffect.createBlurEffect(15, 15, Shader.TileMode.CLAMP));
+        setRenderEffect(RenderEffect.createBlurEffect(30, 30, Shader.TileMode.CLAMP));
     }
 
     public xdCardPrefWallBlur(Context context, AttributeSet attrs) {
         super(context, attrs);
         contextM = context;
-        setRenderEffect(RenderEffect.createBlurEffect(15, 15, Shader.TileMode.CLAMP));
+        setRenderEffect(RenderEffect.createBlurEffect(30, 30, Shader.TileMode.CLAMP));
     }
 
 
     public xdCardPrefWallBlur(Context context) {
         super(context);
         contextM = context;
-        setRenderEffect(RenderEffect.createBlurEffect(15, 15, Shader.TileMode.CLAMP));
+        setRenderEffect(RenderEffect.createBlurEffect(30, 30, Shader.TileMode.CLAMP));
     }
 
     @Override
