@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright 2022 The xdroidOSS & xyzprjkt
+     Copyright 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,10 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mnmlist_dashboard_header"
-    style="@style/xd_pref_card_sin"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/xd_dashboard_pref_sin-accent"
     android:layout_width="match_parent"
-    android:layout_height="125dp">
+    android:layout_height="wrap_content">
+
+    <include
+        layout="@layout/xd_pref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
