@@ -22,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="150dp">
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
             android:id="@+id/xd_about_phone_header_illustration_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,21 +69,19 @@
         
             </RelativeLayout>
             
-            <com.google.android.material.card.MaterialCardView
+            <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="#00000000"
                 app:cardElevation="0dp">
 
-                <com.google.android.material.card.MaterialCardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/xd_about_phone_header_illustration"
                     android:layout_width="100dp"
                     android:layout_height="300dp"
                     android:layout_marginTop="18dp"
                     app:cardCornerRadius="14dp"
-                    app:cardElevation="0dp"
-                    app:strokeColor="@android:color/system_accent1_1000"
-                    app:strokeWidth="3dp">
+                    app:cardElevation="0dp">
 
                     <com.xdroidui.preferences.xdCardPrefWall
                         android:layout_width="match_parent"
@@ -93,12 +91,12 @@
                         android:gravity="center"
                         android:orientation="vertical" />
 
-                </com.google.android.material.card.MaterialCardView>
+                </androidx.cardview.widget.CardView>
             
-            </com.google.android.material.card.MaterialCardView>
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
