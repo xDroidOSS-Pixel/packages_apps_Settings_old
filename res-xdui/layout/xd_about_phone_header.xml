@@ -170,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_marginBottom="-12dp"
-                    android:format12Hour="h"
+                    android:format12Hour="hh"
                     android:format24Hour="kk"
                     style="@style/xd_clock"/>
                         
