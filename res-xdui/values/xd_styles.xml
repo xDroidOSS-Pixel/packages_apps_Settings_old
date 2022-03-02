@@ -183,4 +183,13 @@
         <item name="android:clipToPadding">false</item>
     </style>
 
+    <!-- xd. Clock -->
+    <style name="xd_clock">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@android:color/system_accent1_100</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:fontFeatureSettings">tnum, cv03, cv04</item>
+    </style>
+
 </resources>
