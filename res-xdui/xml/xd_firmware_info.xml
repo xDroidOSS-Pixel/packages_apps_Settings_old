@@ -42,7 +42,7 @@
         <!-- Android version -->
         <Preference
             android:key="os_firmware_version"
-            android:title="@string/firmware_version"
+            android:title="@string/android_plat"
             android:summary="@string/summary_placeholder"
             settings:layout="@layout/xd_pref_card_top"
             settings:enableCopying="true"
