@@ -21,9 +21,10 @@
     android:layout_height="wrap_content"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:gravity="center_vertical"
-    android:clipToPadding="false"
     android:baselineAligned="false"
-    style="@style/xd_dashboard_pref_card_mid">
+    android:layout_marginHorizontal="@dimen/xd_pref_card_horizontal_padding"
+    android:background="@drawable/xd_pref_card_mid"
+    android:clipToPadding="false">
 
     <RelativeLayout
         android:layout_width="wrap_content"
