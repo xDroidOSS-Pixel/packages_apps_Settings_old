@@ -35,6 +35,7 @@
     <string name="lockscreen_title">Lock screen</string>
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
     <string name="interfaces_gaming_mode">Preference Game</string>
+    <string name="interfaces_dev">Developers Settings</string>
 
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
@@ -166,4 +167,9 @@
     <string name="private_dns_mode_open_dns" translatable="false">Open DNS</string>
     <string name="private_dns_mode_cleanbrowsing" translatable="false">Cleanbrowsing DNS</string>
     <string name="private_dns_mode_quad9" translatable="false">Quad9 DNS</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect.</string>
+
 </resources>
