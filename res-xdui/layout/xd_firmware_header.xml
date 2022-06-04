@@ -34,11 +34,12 @@
         app:cardCornerRadius="@dimen/xd_pref_card_radius">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:tint="?android:attr/colorAccent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="-20dp"
             android:scaleType="fitStart"
-            android:src="@drawable/xd_firmware_header_bg" />
+            android:src="@drawable/xd_about_firmware_simply" />
 
         <TextView
             android:layout_width="match_parent"
