@@ -105,7 +105,7 @@
     <string name="xd_camera_mp">Kamera</string>
     <string name="xd_screen_type">Layar</string>
     <!-- xd. Build Status -->
-    <string name="xd_build_status">Perangkat Anda tidak didukung secara resmi!</string>
+    <string name="xd_build_status">Perangkat anda tidak didukung secara resmi!</string>
     <string name="xd_build_maintained_summary">Dikelola oleh %s</string>
-    <string name="xd_build_unmaintained_summary">Bangunan ini tidak dikelola secara resmi</string>
+    <string name="xd_build_unmaintained_summary">Build ini tidak dikelola secara resmi</string>
 </resources>
