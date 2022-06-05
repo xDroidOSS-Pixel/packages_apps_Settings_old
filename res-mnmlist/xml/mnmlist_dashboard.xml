@@ -34,7 +34,7 @@
         <!-- System Interfaces -->
         <Preference
             android:key="statusbar_category"
-            settings:layout="@layout/mnmlist_dashboard_pref_top"
+            settings:layout="@layout/xd_dashboard_pref_top"
             android:title="@string/interfaces_title"
             android:summary="@string/interfaces_summary"
             android:fragment="com.xd.mnmlist.fragments.Interfaces" />
@@ -42,7 +42,7 @@
         <!-- Quick Settings -->
         <Preference
             android:key="quicksettings_category"
-            settings:layout="@layout/mnmlist_dashboard_pref_mid"
+            settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/quicksettings_title" 
             android:summary="@string/quicksettings_summary"
             android:fragment="com.xd.mnmlist.fragments.QuickSettings"/>
@@ -50,7 +50,7 @@
         <!-- Getures -->
         <Preference
             android:key="gestures_category"
-            settings:layout="@layout/mnmlist_dashboard_pref_mid"
+            settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/gestures_title"
             android:summary="@string/gestures_summary"
             android:fragment="com.xd.mnmlist.fragments.Gestures"/>
@@ -58,7 +58,7 @@
         <!-- Buttons -->
         <Preference
             android:key="buttons_category"
-            settings:layout="@layout/mnmlist_dashboard_pref_mid"
+            settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/buttons_title" 
             android:summary="@string/buttons_summary"
             android:fragment="com.xd.mnmlist.fragments.Buttons"/>
@@ -66,7 +66,7 @@
         <!-- Lockscreen -->
         <Preference
             android:key="lockscreen_category"
-            settings:layout="@layout/mnmlist_dashboard_pref_mid"
+            settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/lockscreen_title" 
             android:summary="@string/lockscreen_summary"
             android:fragment="com.xd.mnmlist.fragments.Lockscreen"/>
@@ -74,7 +74,7 @@
         <!-- Misc -->
         <Preference
             android:key="misc_category"
-            settings:layout="@layout/mnmlist_dashboard_pref_bot"
+            settings:layout="@layout/xd_dashboard_pref_bot"
             android:title="@string/misc_title" 
             android:summary="@string/misc_summary"
             android:fragment="com.xd.mnmlist.fragments.Misc"/>
