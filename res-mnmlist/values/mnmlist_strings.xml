@@ -33,9 +33,9 @@
     <string name="interfaces_battery_title">Battery</string>
     <string name="buttons_title">Buttons</string>
     <string name="buttons_summary">Volume wake • Playback control</string>
-    <string name="quicksettings_title">Quick Settings</string>
-    <string name="quicksettings_summary">Brightness Slider • Auto brightness</string>
-    <string name="lockscreen_title">Lock Screen</string>
-    <string name="lockscreen_summary">AODC • Media Art • Charge info</string>
+    <string name="quicksettings_title">Quick settings</string>
+    <string name="quicksettings_summary">Brightness slider • Auto brightness</string>
+    <string name="lockscreen_title">Lock screen</string>
+    <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
 
 </resources>
