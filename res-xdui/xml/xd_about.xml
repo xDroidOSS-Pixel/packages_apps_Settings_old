@@ -64,6 +64,20 @@
 
         </Preference>
 
+        <!-- Eky Zahahah -->
+        <Preference
+            android:key="xd_about_eky"
+            android:icon="@drawable/xd_about_eky"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_eky"
+            android:summary="@string/xd_about_core_eky_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/hahahahahhhhh10"/>
+
+        </Preference>
+
     </PreferenceCategory>
 
     <!-- Contributor Category -->
