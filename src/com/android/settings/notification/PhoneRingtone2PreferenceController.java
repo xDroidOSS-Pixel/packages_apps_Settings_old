@@ -41,6 +41,15 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
         DefaultRingtonePreference ringtonePreference =
                 (DefaultRingtonePreference) screen.findPreference(KEY_PHONE_RINGTONE2);
         ringtonePreference.setSlotId(SLOT_ID);
+
+        if (isBuiltInEuiccSlot(SLOT_ID)){
+            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " (e-SIM)");
+        }else{
+            ringtonePreference.setTitle(mContext.getString(R.string.ringtone_title) + " - " +
+                String.format(mContext.getString(R.string.sim_card_number_title), 2));
+        }
+
+        ringtonePreference.setEnabled(hasCard());
     }
 
     @Override
@@ -50,9 +59,6 @@ public class PhoneRingtone2PreferenceController extends RingtonePreferenceContro
 
     @Override
     public boolean isAvailable() {
-        if (isBuiltInEuiccSlot(SLOT_ID)){
-            return false;
-        }
         TelephonyManager telephonyManager =
                 (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
         return Utils.isVoiceCapable(mContext) && telephonyManager.isMultiSimEnabled();
