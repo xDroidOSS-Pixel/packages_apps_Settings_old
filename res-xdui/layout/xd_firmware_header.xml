@@ -39,6 +39,7 @@
             android:layout_marginTop="-15dp"
             android:layout_marginStart="-20dp"
             android:scaleType="fitStart"
+            android:tint="@color/xd_simply_mask"
             android:src="@drawable/xd_about_firmware_simply" />
 
         <TextView
