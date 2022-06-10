@@ -92,6 +92,8 @@
     <string name="xd_about_core_xyzuan_role">Pendiri, Pengembang Utama, dan Perancang UI</string>
     <string name="xd_about_core_friction">Firman Yanuar</string>
     <string name="xd_about_core_friction_role">Desainer UI dan UX</string>
+    <string name="xd_about_core_eky">Eky Zakariah</string>
+    <string name="xd_about_core_eky_role">Pengembang front end</string>
     <string name="xd_about_contributor_rdclxvi">Royan Karim</string>
     <string name="xd_about_contributor_rdclxvi_role">Penerjemah Indonesia</string>
     <string name="xd_about_contributor_iszon">Iszon</string>
@@ -108,4 +110,97 @@
     <string name="xd_build_status">Perangkat anda tidak didukung secara resmi!</string>
     <string name="xd_build_maintained_summary">Dikelola oleh %s</string>
     <string name="xd_build_unmaintained_summary">Build ini tidak dikelola secara resmi</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Dinonaktifkan</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Temukan sensor sidik jari di bagian depan tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Temukan sensor sidik jari di bagian depan perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Temukan sensor sidik jari di bagian depan ponsel Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Temukan sensor sidik jari di bagian belakang tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Temukan sensor sidik jari di bagian belakang perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Temukan sensor sidik jari di bagian belakang ponsel Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Temukan sensor sidik jari di bagian samping tablet Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Temukan sensor sidik jari di bagian samping perangkat Anda.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Temukan sensor sidik jari di bagian samping ponsel Anda.</string>
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Sentuh sensor di bagian depan tablet Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Sentuh sensor di bagian depan perangkat Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Sentuh sensor di bagian depan ponsel Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Sentuh sensor di bagian belakang tablet Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Sentuh sensor di bagian belakang perangkat Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Sentuh sensor di bagian belakang ponsel Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Sentuh sensor di bagian samping tablet Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Sentuh sensor di bagian samping perangkat Anda.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Sentuh sensor di bagian samping ponsel Anda.</string>
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Hubungkan volume dering &amp; notifikasi</string>
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Atur ulang statistik baterai?</string>
+    <string name="battery_stats_message">Statistik riwayat baterai akan diatur ulang</string>
+    <string name="battery_stats_clear">@string/proxy_clear_text</string>
+    <!-- Default getTimeSpentInApp string for Wellbeing to display. [CHAR LIMIT=NONE] -->
+    <string name="duration_less_than_one_minute">Kurang dari 1 menit</string>
+    <!-- Summary for Wellbeing screen time usage. [CHAR LIMIT=NONE] -->
+    <string name="screen_time_summary_usage_today">%1$s hari ini</string>
+    <!-- Game -->
+    <string name="game_dashboard_always_on_summary">Tampilkan pintasan Dasbor Game dalam game</string>
+    <string name="game_dashboard_always_on_title">Dasbor Game</string>
+    <string name="game_dashboard_dnd_rule_name">Bermain Game</string>
+    <string name="game_dashboard_dnd_summary">Hanya dapatkan notifikasi dari orang dan aplikasi penting saat bermain game</string>
+    <string name="game_dashboard_dnd_title">Jangan Ganggu untuk game</string>
+    <!-- Columbus -->
+    <string name="columbus_title">@string/columbus_name</string>
+    <string name="columbus_gesture_detected">Ketuk Cepat terdeteksi!</string>
+    <string name="columbus_gesture_enrollment_complete">Selesai</string>
+    <string name="columbus_gesture_enrollment_do_it_later">Tidak sekarang</string>
+    <string name="columbus_gesture_enrollment_settings">Pergi ke Setelan</string>
+    <string name="columbus_gesture_enrollment_try_it">Cobalah</string>
+    <string name="columbus_gesture_training_action_no_selection_error">Silakan pilih tindakan untuk dilakukan</string>
+    <string name="columbus_gesture_training_action_text">Pilih apa yang terjadi saat Anda menggunakan Ketuk Cepat. Anda dapat mengubahnya nanti di setelan.</string>
+    <string name="columbus_gesture_training_action_title">Pilih opsi Ketuk Cepat</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">… Ketuk dua kali 1 dari 2 yang terdeteksi</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">Mari kita coba sekali lagi. Ketuk bagian belakang ponsel Anda dua kali dengan cepat.</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">Bagus!</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">… Ketuk dua kali 2 dari 2 yang terdeteksi</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">Anda siap untuk mulai menggunakan Ketuk Cepat</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">Anda mengerti!</string>
+    <string name="columbus_gesture_training_enrolling_text">Ketuk bagian belakang ponsel Anda dua kali dengan cepat.</string>
+    <string name="columbus_gesture_training_enrolling_title">Coba Ketuk Cepat</string>
+    <string name="columbus_gesture_training_finished_text">Untuk mengubah kekuatan ketuk yang diperlukan untuk menggunakan Ketuk Cepat, pergi ke Setelan.</string>
+    <string name="columbus_gesture_training_finished_title">Anda telah menyiapkan Ketuk Cepat</string>
+    <string name="columbus_gesture_training_intro_text_accidental">Anda baru saja mengetuk dua kali di bagian belakang perangkat Anda, yang memungkinkan Anda menggunakan Asisten saat bepergian. Anda dapat menyesuaikan gestur ini di setelan.</string>
+    <string name="columbus_gesture_training_intro_text_suw">Ambil tangkapan layar, tampilkan notifikasi, atau mulai tindakan lain dalam dua ketukan.</string>
+    <string name="columbus_gesture_training_intro_title">Ketuk Cepat untuk tindakan cepat</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">Silakan pilih aplikasi yang akan dibuka</string>
+    <string name="columbus_gesture_training_launch_text">Pilih aplikasi yang ingin Anda buka saat menggunakan Ketuk Cepat.</string>
+    <string name="columbus_gesture_training_launch_title">Pilih aplikasi untuk dibuka</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">%1$s setelan pintasan</string>
+    <string name="columbus_launch_settings_activity_title">Setelan Ketuk Cepat</string>
+    <string name="columbus_name">Ketuk Cepat</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">%1$s setelan</string>
+    <string name="columbus_setting_action_assistant_title">Akses asisten digital Anda</string>
+    <string name="columbus_setting_action_assistant_value">asisten</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">Tidak ada aplikasi dipilih</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">Aplikasi tidak dipasang</string>
+    <string name="columbus_setting_action_launch_title">Buka aplikasi</string>
+    <string name="columbus_setting_action_launch_value">luncurkan</string>
+    <string name="columbus_setting_action_notification_title">Tampilkan notifikasi</string>
+    <string name="columbus_setting_action_notification_value">notifikasi</string>
+    <string name="columbus_setting_action_open_app_title">Buka aplikasi</string>
+    <string name="columbus_setting_action_overview_title">Lihat aplikasi baru-baru ini</string>
+    <string name="columbus_setting_action_overview_value">tinjauan</string>
+    <string name="columbus_setting_action_play_pause_title">Putar atau jeda media</string>
+    <string name="columbus_setting_action_play_pause_value">media</string>
+    <string name="columbus_setting_action_screenshot_title">Ambil tangkapan layar</string>
+    <string name="columbus_setting_action_screenshot_value">tangkapan layar</string>
+    <string name="columbus_setting_actions_title">Ketuk bagian belakang ponsel dua kali untuk</string>
+    <string name="columbus_setting_additional_settings_title">Kekuatan Ketuk Cepat</string>
+    <string name="columbus_setting_app_selection_help_text">Pilih aplikasi yang akan dibuka saat Anda mengetuk bagian belakang ponsel dua kali. Jika Anda mencopot pemasangan aplikasi, Ketuk Cepat mati hingga Anda memilih aplikasi lain.</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">Pilih apa yang terjadi saat Anda membuka aplikasi ini menggunakan Ketuk Cepat.</string>
+    <string name="columbus_setting_enable_switch_title">Gunakan Ketuk Cepat</string>
+    <string name="columbus_setting_sensitivity_title">Membutuhkan ketukan yang lebih kuat</string>
+    <string name="columbus_summary">%1$s / %2$s</string>
 </resources>
