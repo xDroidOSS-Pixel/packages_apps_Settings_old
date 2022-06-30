@@ -36,6 +36,7 @@
     <string name="three_finger_gesture_summary">Gesek tiga jari ke bawah untuk menangkap layar</string>
     <string name="interfaces_gaming_mode">Preferensi Permainan</string>
     <string name="interfaces_dev">Pengaturan Pengembang</string>
+     <string name="interfaces_lockscreen">Pengaturan kunci layar</string>
     <!-- Gestures & Buttons category -->
     <string name="gestures_category_title">Gestur</string>
     <string name="buttons_category_title">Tombol</string>

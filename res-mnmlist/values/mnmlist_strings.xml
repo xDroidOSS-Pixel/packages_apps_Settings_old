@@ -36,6 +36,7 @@
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
     <string name="interfaces_gaming_mode">Preference Game</string>
     <string name="interfaces_dev">Developers Settings</string>
+    <string name="interfaces_lockscreen">Lockscreen Settings</string>
 
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
@@ -172,5 +173,9 @@
     <string name="global_vpn_summary">Force all traffic on the device through this VPN, including work profile and other users.</string>
     <string name="global_vpn_summary_on">Force all traffic on the device through this VPN, including work profile and other users. Note: When enabled, you will not be able to use a separate VPN in a work profile or other users</string>
     <string name="global_vpn_summary_any_vpn_active">You need to disable all active VPN connections first to enable this</string>
+    
+    <!-- Lock screen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lock screen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negotiated charger max current and voltage, and battery temperature on lock screen while charging</string>
 
 </resources>
