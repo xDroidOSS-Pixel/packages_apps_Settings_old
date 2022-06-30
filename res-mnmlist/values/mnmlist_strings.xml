@@ -36,6 +36,7 @@
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
     <string name="interfaces_gaming_mode">Preference Game</string>
     <string name="interfaces_dev">Developers Settings</string>
+    <string name="interfaces_lockscreen">Lockscreen Settings</string>
 
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
@@ -171,5 +172,9 @@
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
     <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <!-- Lock screen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Lock screen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negotiated charger max current and voltage, and battery temperature on lock screen while charging</string>
 
 </resources>
