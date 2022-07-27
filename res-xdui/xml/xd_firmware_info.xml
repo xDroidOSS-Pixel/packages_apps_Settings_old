@@ -33,7 +33,14 @@
         android:summary="@string/xd_summary_placeholder"
         android:icon="@drawable/xd_build"
         settings:controller="com.xdroidui.preferences.xdBuildMaintainer"
-        settings:layout="@layout/xd_pref_card_sin-accent"/>
+        settings:layout="@layout/xd_pref_card_sin-accent">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="id.xyzprjkt.xd.updater"
+            android:targetClass="id.xyzprjkt.xd.updater.MainActivity"/>
+
+    </Preference>
 
     <!-- Firmware Category -->
     <PreferenceCategory
