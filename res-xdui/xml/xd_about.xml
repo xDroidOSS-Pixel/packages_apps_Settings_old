@@ -78,5 +78,33 @@
 
         </Preference>
 
+        <!-- Waxaranai -->
+        <Preference
+            android:key="xd_about_waxaranai"
+            android:icon="@drawable/xd_about_waxaranai"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_waxaranai"
+            android:summary="@string/xd_about_core_waxaranai_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Waxaranai"/>
+
+        </Preference>
+
+        <!-- basokuahenakrasanya -->
+        <Preference
+            android:key="xd_about_basokuahenakrasanya"
+            android:icon="@drawable/xd_about_basokuahenakrasanya"
+            settings:layout="@layout/xd_about_core_pref"
+            android:title="@string/xd_about_core_basokuahenakrasanya"
+            android:summary="@string/xd_about_core_basokuahenakrasanya_role">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/basokuahenakrasanya"/>
+
+        </Preference>
+
     </PreferenceCategory>
 </PreferenceScreen>
