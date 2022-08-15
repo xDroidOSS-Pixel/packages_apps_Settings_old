@@ -54,7 +54,7 @@ android_library {
     ],
 
     srcs: ["src/**/*.java",
-           "src/**/*.kt"
+           "src/**/*.kt",
            "src-xdui/**/*.java",
            "src-mnmlist/**/*.java",
     ],
