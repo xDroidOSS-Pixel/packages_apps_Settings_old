@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.xd.mnmlist.fragments;
+package com.xd.mnmlist;
 
 import android.os.Bundle;
 import android.content.Context;
@@ -27,13 +27,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Gestures extends SettingsPreferenceFragment {
+public class Interfaces extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.mnmlist_gestures);
+        addPreferencesFromResource(R.xml.mnmlist_interfaces);
     }
 
     @Override
