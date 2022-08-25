@@ -53,7 +53,7 @@
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/gestures_title"
             android:summary="@string/gestures_summary"
-            android:fragment="com.xd.mnmlist.Gestures"/>
+            android:fragment="com.android.settings.gestures.GestureSettings"/>
         
         <!-- Buttons -->
         <Preference
