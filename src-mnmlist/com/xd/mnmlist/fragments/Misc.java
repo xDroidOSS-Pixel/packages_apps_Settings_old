@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.xd.mnmlist;
+package com.xd.mnmlist.fragments;
 
 import android.os.Bundle;
 import android.content.Context;
@@ -27,13 +27,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Interfaces extends SettingsPreferenceFragment {
+public class Misc extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.mnmlist_interfaces);
+        addPreferencesFromResource(R.xml.mnmlist_misc);
     }
 
     @Override
