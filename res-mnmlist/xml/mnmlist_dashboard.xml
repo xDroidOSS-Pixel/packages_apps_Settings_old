@@ -37,7 +37,7 @@
             settings:layout="@layout/xd_dashboard_pref_top"
             android:title="@string/interfaces_title"
             android:summary="@string/interfaces_summary"
-            android:fragment="com.xd.mnmlist.fragments.Interfaces" />
+            android:fragment="com.xd.mnmlist.Interfaces" />
 
         <!-- Quick Settings -->
         <Preference
@@ -45,7 +45,7 @@
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/quicksettings_title" 
             android:summary="@string/quicksettings_summary"
-            android:fragment="com.xd.mnmlist.fragments.QuickSettings"/>
+            android:fragment="com.xd.mnmlist.QuickSettings"/>
 
         <!-- Getures -->
         <Preference
@@ -53,7 +53,7 @@
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/gestures_title"
             android:summary="@string/gestures_summary"
-            android:fragment="com.xd.mnmlist.fragments.Gestures"/>
+            android:fragment="com.xd.mnmlist.Gestures"/>
         
         <!-- Buttons -->
         <Preference
@@ -61,7 +61,7 @@
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/buttons_title" 
             android:summary="@string/buttons_summary"
-            android:fragment="com.xd.mnmlist.fragments.Buttons"/>
+            android:fragment="com.xd.mnmlist.Buttons"/>
 
         <!-- Lockscreen -->
         <Preference
@@ -69,7 +69,7 @@
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/lockscreen_title" 
             android:summary="@string/lockscreen_summary"
-            android:fragment="com.xd.mnmlist.fragments.Lockscreen"/>
+            android:fragment="com.xd.mnmlist.Lockscreen"/>
 
         <!-- Misc -->
         <Preference
@@ -77,6 +77,6 @@
             settings:layout="@layout/xd_dashboard_pref_bot"
             android:title="@string/misc_title" 
             android:summary="@string/misc_summary"
-            android:fragment="com.xd.mnmlist.fragments.Misc"/>
+            android:fragment="com.xd.mnmlist.Misc"/>
 
 </PreferenceScreen>
