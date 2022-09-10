@@ -60,9 +60,9 @@
                     style="@style/xd_text_primary_medium"/>
             
                 <TextView
+                    android:id="@android:id/summary"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/xd_device_name_summary"
                     android:textColor="@android:color/system_accent1_700"
                     android:singleLine="true"
                     android:layout_below="@android:id/title"
