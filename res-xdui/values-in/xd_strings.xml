@@ -43,8 +43,9 @@
     <string name="xd_dashboard_greet12">Wilujeng sumping ka xdroid</string>
     <string name="xd_dashboard_device">Tentang ponsel</string>
     <string name="xd_dashboard_account">Akun</string>
-    <string name="xd_dashboard_network">Internet</string>
-    <string name="xd_dashboard_conectivity">Konektivitas</string>
+    <string name="xd_dashboard_network">Konektivitas</string>
+    <string name="xd_dashboard_portable_hotspot">Hotspot portabel</string>
+    <string name="xd_dashboard_conectivity">Perangkat</string>
     <string name="xd_dashboard_display">Tampilan</string>
     <string name="xd_dashboard_battery">Baterai</string>
     <string name="xd_dashboard_sound">Suara</string>

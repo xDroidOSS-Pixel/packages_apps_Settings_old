@@ -23,6 +23,7 @@ import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.res.Configuration;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -32,6 +33,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
@@ -51,9 +53,22 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.settings.network.InternetPreferenceController;
+import com.android.settings.network.TetherPreferenceController;
+import com.android.settings.network.AirplaneModePreferenceController;
+
+import com.android.settings.core.OnActivityResultListener;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
+import com.android.settingslib.core.lifecycle.Lifecycle;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
-        PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
+        PreferenceFragmentCompat.OnPreferenceStartFragmentCallback, OnActivityResultListener {
 
     private static final String TAG = "TopLevelSettings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
@@ -91,6 +106,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     public void onAttach(Context context) {
         super.onAttach(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
+        use(AirplaneModePreferenceController.class).setFragment(this);
         use(SupportPreferenceController.class).setActivity(getActivity());
     }
 
@@ -194,12 +210,15 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         });
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             Preference pref = getPreferenceScreen().getPreference(i);
+            SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
             if (pref.isVisible() && pref.getTitle() != null && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_top && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_sin && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_bot && 
+                switchPref.getLayoutResource() != R.layout.xd_dashboard_prefswitch_top && 
+                pref.getLayoutResource() != R.layout.xd_dashboard_pref_mnmlist && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_phone ) {
-                pref.setLayoutResource(R.layout.xd_dashboard_pref_mid);
+                pref.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
             }
         }
     }
@@ -358,6 +377,35 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private interface PreferenceJob {
         default void init() {}
         void doForEach(Preference preference);
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), mMetricsFeatureProvider, this /* fragment */);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(Context context,
+            Lifecycle lifecycle, MetricsFeatureProvider metricsFeatureProvider, Fragment fragment) {
+        final InternetPreferenceController internetPreferenceController =
+                new InternetPreferenceController(context, lifecycle);
+
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new TetherPreferenceController(context, lifecycle));
+        if (internetPreferenceController != null) {
+            controllers.add(internetPreferenceController);
+        }
+        return controllers;
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case AirplaneModePreferenceController.REQUEST_CODE_EXIT_ECM:
+                use(AirplaneModePreferenceController.class)
+                        .onActivityResult(requestCode, resultCode, data);
+                break;
+        }
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
