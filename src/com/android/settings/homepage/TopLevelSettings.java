@@ -209,21 +209,23 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             }
         });
         
-        Preference googlePreference = getPreferenceScreen().findPreference("top_level_google");
-        Preference wellbeingLegacyPreference = getPreferenceScreen().findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity");
-        Preference wellbeingPreference = getPreferenceScreen().findPreference("top_level_wellbeing");
-        
-        if (googlePreference.isVisible() && googlePreference.getTitle() != null ) {
-            googlePreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
-        }
-        if (wellbeingLegacyPreference.isVisible() && wellbeingLegacyPreference.getTitle() != null ) {
-            wellbeingLegacyPreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
-            wellbeingLegacyPreference.setTitle(R.string.xd_dashboard_wellbeing);
-        }
-        if (wellbeingPreference.isVisible() && wellbeingPreference.getTitle() != null ) {
-            wellbeingPreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
-            wellbeingPreference.setTitle(R.string.xd_dashboard_wellbeing);
-        }
+        try {
+            Preference googlePreference = getPreferenceScreen().findPreference("top_level_google");
+            Preference wellbeingLegacyPreference = getPreferenceScreen().findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity");
+            Preference wellbeingPreference = getPreferenceScreen().findPreference("top_level_wellbeing");
+
+            if (googlePreference.isVisible() && googlePreference.getTitle() != null ) {
+                googlePreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
+            }
+            if (wellbeingLegacyPreference.isVisible() && wellbeingLegacyPreference.getTitle() != null ) {
+                wellbeingLegacyPreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
+                wellbeingLegacyPreference.setTitle(R.string.xd_dashboard_wellbeing);
+            }
+            if (wellbeingPreference.isVisible() && wellbeingPreference.getTitle() != null ) {
+                wellbeingPreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
+                wellbeingPreference.setTitle(R.string.xd_dashboard_wellbeing);
+            }
+        } catch (NullPointerException e) {}
     }
 
     @Override
