@@ -208,18 +208,21 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 icon.setTint(tintColor);
             }
         });
-        for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
-            Preference pref = getPreferenceScreen().getPreference(i);
-            SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
-            if (pref.isVisible() && pref.getTitle() != null && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_pref_top && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_pref_sin && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_pref_bot && 
-                switchPref.getLayoutResource() != R.layout.xd_dashboard_prefswitch_top && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_pref_mnmlist && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_phone ) {
-                pref.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
-            }
+        
+        Preference googlePreference = getPreferenceScreen().findPreference("top_level_google");
+        Preference wellbeingLegacyPreference = getPreferenceScreen().findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity");
+        Preference wellbeingPreference = getPreferenceScreen().findPreference("top_level_wellbeing");
+        
+        if (googlePreference.isVisible() && googlePreference.getTitle() != null ) {
+            googlePreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
+        }
+        if (wellbeingLegacyPreference.isVisible() && wellbeingLegacyPreference.getTitle() != null ) {
+            wellbeingLegacyPreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
+            wellbeingLegacyPreference.setTitle(R.string.xd_dashboard_wellbeing);
+        }
+        if (wellbeingPreference.isVisible() && wellbeingPreference.getTitle() != null ) {
+            wellbeingPreference.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
+            wellbeingPreference.setTitle(R.string.xd_dashboard_wellbeing);
         }
     }
 
