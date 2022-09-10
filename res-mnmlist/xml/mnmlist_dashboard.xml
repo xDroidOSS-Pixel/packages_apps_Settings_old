@@ -29,14 +29,13 @@
             android:summary="@string/xd_tap_about_summary"
             android:icon="@drawable/xd_about"
             android:fragment="com.android.settings.deviceinfo.aboutxd.AboutXDFragments"
-            settings:layout="@layout/xd_pref_card_sin-accent"/>
+            settings:layout="@layout/xd_pref_card_sin_tertiary"/>
 
         <!-- System Interfaces -->
         <Preference
             android:key="statusbar_category"
             settings:layout="@layout/xd_dashboard_pref_top"
             android:title="@string/interfaces_title"
-            android:summary="@string/interfaces_summary"
             android:fragment="com.xd.mnmlist.fragments.Interfaces" />
 
         <!-- Quick Settings -->
@@ -44,7 +43,6 @@
             android:key="quicksettings_category"
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/quicksettings_title" 
-            android:summary="@string/quicksettings_summary"
             android:fragment="com.xd.mnmlist.fragments.QuickSettings"/>
 
         <!-- Getures -->
@@ -52,7 +50,6 @@
             android:key="gestures_category"
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/gestures_title"
-            android:summary="@string/gestures_summary"
             android:fragment="com.android.settings.gestures.GestureSettings"/>
         
         <!-- Buttons -->
@@ -60,7 +57,6 @@
             android:key="buttons_category"
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/buttons_title" 
-            android:summary="@string/buttons_summary"
             android:fragment="com.xd.mnmlist.fragments.Buttons"/>
 
         <!-- Lockscreen -->
@@ -68,7 +64,6 @@
             android:key="lockscreen_category"
             settings:layout="@layout/xd_dashboard_pref_mid"
             android:title="@string/lockscreen_title" 
-            android:summary="@string/lockscreen_summary"
             android:fragment="com.xd.mnmlist.fragments.Lockscreen"/>
 
         <!-- Misc -->
@@ -76,7 +71,6 @@
             android:key="misc_category"
             settings:layout="@layout/xd_dashboard_pref_bot"
             android:title="@string/misc_title" 
-            android:summary="@string/misc_summary"
             android:fragment="com.xd.mnmlist.fragments.Misc"/>
 
 </PreferenceScreen>
