@@ -48,8 +48,9 @@
     <string name="xd_dashboard_greet12">Hey, There i\'am using xdroid</string>
     <string name="xd_dashboard_device">About phone</string>
     <string name="xd_dashboard_account">Account</string>
-    <string name="xd_dashboard_network">Internet</string>
-    <string name="xd_dashboard_conectivity">Connectivity</string>    
+    <string name="xd_dashboard_network">Connectivity</string>
+    <string name="xd_dashboard_portable_hotspot">Portable hotspot</string>
+    <string name="xd_dashboard_conectivity">Devices</string>    
     <string name="xd_dashboard_display">Display</string>
     <string name="xd_dashboard_battery">Battery</string>
     <string name="xd_dashboard_sound">Sound</string>
@@ -65,7 +66,6 @@
 
     <!-- xd. mnmlist. -->
     <string name="xd_dashboard_xzrypr">Mnmlist</string>
-    <string name="xd_dashboard_xzrypr_summary">Get your favorite customization here</string>
 
     <!-- xd. Preferences -->
     <string name="xd_firmware_info_summary">Information about firmware in this phone</string>

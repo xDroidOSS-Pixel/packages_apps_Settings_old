@@ -48,40 +48,14 @@
             android:singleLine="true"
             style="@style/xd_text_primary_medium" />
 
-        <TextView 
-            android:id="@+android:id/summary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:singleLine="true"
-            style="@style/xd_text_secondary"
-            android:layout_gravity="center_vertical|end"
-            android:gravity="center_vertical|end"/>
-
     </LinearLayout>
 
-    <LinearLayout
+    <!-- Preference should place its actual preference widget here. -->
+    <LinearLayout android:id="@+android:id/widget_frame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:minWidth="64dp"
-        android:orientation="vertical" >
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            app:cardBackgroundColor="@color/xd_background1"
-            app:cardElevation="0dp"
-            app:cardCornerRadius="99dp">
-        
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/xd_dashboard_icn-next"
-                    android:tint="?android:attr/textColorPrimary" />    
-        
-        </androidx.cardview.widget.CardView>
-    
-    </LinearLayout>
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
 
 </LinearLayout>
