@@ -95,16 +95,17 @@ public class MyDeviceInfoFragment extends DashboardFragment
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
-        
-        ValidatedEditTextPreference deviceName = getPreferenceScreen().findPreference("device_name");
-        Preference brandedAccount = getPreferenceScreen().findPreference("branded_account");
-        Preference emergencyPref = getPreferenceScreen().findPreference("emergency_info");
+        try {        
+            ValidatedEditTextPreference deviceName = getPreferenceScreen().findPreference("device_name");
+            Preference brandedAccount = getPreferenceScreen().findPreference("branded_account");
+            Preference emergencyPref = getPreferenceScreen().findPreference("emergency_info");
 
-        if (brandedAccount.isVisible() || emergencyPref.isVisible() ) {
-            deviceName.setLayoutResource(R.layout.xd_pref_card_top);
-        } else {
-            deviceName.setLayoutResource(R.layout.xd_pref_card_sin);
-        }
+            if (brandedAccount.isVisible() || emergencyPref.isVisible() ) {
+                deviceName.setLayoutResource(R.layout.xd_pref_card_top);
+            } else {
+                deviceName.setLayoutResource(R.layout.xd_pref_card_sin);
+            }
+        } catch (NullPointerException e) {}
     }
 
 
