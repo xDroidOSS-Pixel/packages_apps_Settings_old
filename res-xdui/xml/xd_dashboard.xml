@@ -25,6 +25,7 @@
         android:key="top_level_about_device"
         android:order="-105"
         android:title="@string/xd_dashboard_device"
+        settings:controller="com.xdroidui.preferences.xdDashboardMyPhoneHeaderController"
         settings:layout="@layout/xd_dashboard_phone"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"/>
 
