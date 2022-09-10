@@ -19,17 +19,24 @@ package com.android.settings.homepage;
 import static com.android.settings.search.actionbar.SearchMenuController.NEED_SEARCH_ICON_IN_ACTION_BAR;
 import static com.android.settingslib.search.SearchIndexable.MOBILE;
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.ComponentName;
 import android.content.res.Configuration;
 import android.content.Intent;
+import android.content.pm.UserInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
@@ -41,6 +48,7 @@ import androidx.window.embedding.SplitController;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
+import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
 import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.SubSettingLauncher;
@@ -61,6 +69,7 @@ import com.android.settings.core.OnActivityResultListener;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settingslib.widget.LayoutPreference;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -182,6 +191,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     /* scrollNeeded= */ false);
         }
         super.onStart();
+        initMyPhoneCard();
     }
 
     private boolean isOnlyOneActivityInTask() {
@@ -201,14 +211,6 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
-        int tintColor = Utils.getHomepageIconColor(getContext());
-        iteratePreferences(preference -> {
-            Drawable icon = preference.getIcon();
-            if (icon != null) {
-                icon.setTint(tintColor);
-            }
-        });
-
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             Preference pref = getPreferenceScreen().getPreference(i);
             if (pref.isVisible() && pref.getTitle() != null && 
@@ -223,6 +225,42 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         }
         SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
         switchPref.setLayoutResource(R.layout.xd_dashboard_prefswitch_top);
+
+        LayoutPreference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
+        myPhone.setLayoutResource(R.layout.xd_dashboard_phone);
+    }
+
+    private void initMyPhoneCard(){
+        final LayoutPreference myPhonePref = getPreferenceScreen().findPreference("xd_my_phone");
+        final Activity context = getActivity();
+
+        View root = myPhonePref.findViewById(R.id.container);
+        ImageView avatarView = myPhonePref.findViewById(R.id.xd_avatar);
+        TextView ownerName = myPhonePref.findViewById(R.id.xd_phone_owner);
+        TextView deviceName = myPhonePref.findViewById(R.id.xd_phone_name);
+        Bundle bundle = getArguments();
+        avatarView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                startActivity(intent);
+            }
+        });
+
+        final int iconId = bundle.getInt("icon_id", 0);
+        if (iconId == 0) {
+            final UserManager userManager = (UserManager) getActivity().getSystemService(
+                    Context.USER_SERVICE);
+            final UserInfo userInfo = Utils.getExistingUser(userManager,
+                    android.os.Process.myUserHandle());
+            ownerName.setText(userInfo.name);
+            avatarView.setImageDrawable(com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, userInfo));
+        }
+
+        final DeviceNamePreferenceController deviceNamePreferenceController =
+                new DeviceNamePreferenceController(context, "unused_key");
+        deviceName.setText(deviceNamePreferenceController.getSummary());
     }
 
     @Override
