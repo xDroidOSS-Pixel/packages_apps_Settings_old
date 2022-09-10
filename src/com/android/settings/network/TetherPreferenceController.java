@@ -103,10 +103,6 @@ public class TetherPreferenceController extends AbstractPreferenceController imp
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mPreference = screen.findPreference(KEY_TETHER_SETTINGS);
-        if (mPreference != null && !mAdminDisallowedTetherConfig) {
-            mPreference.setTitle(
-                    com.android.settingslib.Utils.getTetheringLabel(mTetheringManager));
-        }
     }
 
     @Override
