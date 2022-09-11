@@ -211,6 +211,14 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
+        initPreferenceCard();
+    }
+
+    private void initPreferenceCard(){
+        
+        LayoutPreference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
+        SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
+
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
             Preference pref = getPreferenceScreen().getPreference(i);
             if (pref.isVisible() && pref.getTitle() != null && 
@@ -222,28 +230,12 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 pref.getLayoutResource() != R.layout.xd_dashboard_phone ) {
                 pref.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
             }
-        }
-        SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
-        switchPref.setLayoutResource(R.layout.xd_dashboard_prefswitch_top);
-
-        LayoutPreference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
-        myPhone.setLayoutResource(R.layout.xd_dashboard_phone);
-
-        try {
-            Preference digitalWellbeingLegacy = getPreferenceScreen()
-                       .findPreference("top_level_wellbeing");
-            Preference digitalWellbeing = getPreferenceScreen()
-                       .findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity");
-            Preference digitalWellbeing2 = getPreferenceScreen()
-                       .findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity");
-            if (digitalWellbeingLegacy.isVisible() && digitalWellbeingLegacy.getTitle() != null){
-                digitalWellbeingLegacy.setTitle(R.string.xd_dashboard_wellbeing);
-            } else if (digitalWellbeing.isVisible() && digitalWellbeing.getTitle() != null) {
-                digitalWellbeing.setTitle(R.string.xd_dashboard_wellbeing);
-            } else if (digitalWellbeing2.isVisible() && digitalWellbeing2.getTitle() != null) {
-                digitalWellbeing2.setTitle(R.string.xd_dashboard_wellbeing);
+            if (pref.getKey().contains("wellbeing")){
+                pref.setLayoutResource(R.layout.xd_dashboard_pref_wellbeing);
             }
-        } catch (NullPointerException e) {}
+        }
+        switchPref.setLayoutResource(R.layout.xd_dashboard_prefswitch_top);
+        myPhone.setLayoutResource(R.layout.xd_dashboard_phone);
     }
 
     private void initMyPhoneCard(){
