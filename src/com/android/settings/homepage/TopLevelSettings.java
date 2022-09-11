@@ -228,6 +228,22 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
         LayoutPreference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
         myPhone.setLayoutResource(R.layout.xd_dashboard_phone);
+
+        try {
+            Preference digitalWellbeingLegacy = getPreferenceScreen()
+                       .findPreference("top_level_wellbeing");
+            Preference digitalWellbeing = getPreferenceScreen()
+                       .findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity");
+            Preference digitalWellbeing2 = getPreferenceScreen()
+                       .findPreference("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity");
+            if (digitalWellbeingLegacy.isVisible() && digitalWellbeingLegacy.getTitle() != null){
+                digitalWellbeingLegacy.setTitle(R.string.xd_dashboard_wellbeing);
+            } else if (digitalWellbeing.isVisible() && digitalWellbeing.getTitle() != null) {
+                digitalWellbeing.setTitle(R.string.xd_dashboard_wellbeing);
+            } else if (digitalWellbeing2.isVisible() && digitalWellbeing2.getTitle() != null) {
+                digitalWellbeing2.setTitle(R.string.xd_dashboard_wellbeing);
+            }
+        } catch (NullPointerException e) {}
     }
 
     private void initMyPhoneCard(){
