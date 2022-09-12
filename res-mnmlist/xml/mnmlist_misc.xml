@@ -18,4 +18,10 @@
      android:title="@string/misc_title"
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
+          android:key="mnmlist_summary"
+          android:title="@string/show_mnmlist_summary_title"
+          android:summary="@string/show_mnmlist_summary_summary"
+          android:defaultValue="true"/>
+
 </PreferenceScreen>
