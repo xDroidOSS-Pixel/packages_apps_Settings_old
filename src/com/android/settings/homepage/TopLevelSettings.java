@@ -71,6 +71,9 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.widget.LayoutPreference;
 
+import android.os.UserHandle;
+import android.provider.Settings;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -191,6 +194,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     /* scrollNeeded= */ false);
         }
         super.onStart();
+        initMnmlistAdditions();
         initMyPhoneCard();
     }
 
@@ -214,8 +218,21 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         initPreferenceCard();
     }
 
+    private void initMnmlistAdditions(){
+
+        final boolean mnmlistSummary = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.MNMLIST_SUMMARY, 0, UserHandle.USER_CURRENT) != 0;
+        Preference mnmlistPref = getPreferenceScreen().findPreference("top_level_mnmlist");
+
+        if (!mnmlistSummary){
+            mnmlistPref.setSummary(null);
+        } else {
+            mnmlistPref.setSummary(R.string.mnmlist_summary);
+        }
+    }
+
     private void initPreferenceCard(){
-        
+
         LayoutPreference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
         SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
 
