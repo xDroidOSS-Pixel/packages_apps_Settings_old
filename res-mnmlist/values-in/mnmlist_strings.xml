@@ -21,8 +21,8 @@
     <string name="mnmlist_dashboard_title">Apa itu xdroid?</string>
     <string name="xd_tap_about">Tentang xdroid</string>
     <string name="xd_tap_about_summary">Ketuk di sini untuk mengetahui lebih lanjut tentang xdroid</string>
-    <string name="gestures_title">Gestur</string>
-    <string name="gestures_summary">Gestur ketuk dua kali • Navigasi sistem</string>
+    <string name="gestures_title">Gestur & Tombol</string>
+    <string name="gestures_summary">Gestur ketuk dua kali • Navigasi sistem • Volume bangun • Kontrol pemutaran</string>
     <string name="misc_title">Lain-lain</string>
     <string name="misc_summary">Mulai ulang lanjutan • Haptik kembali</string>
     <string name="interfaces_title">Antarmuka sistem</string>
@@ -30,11 +30,7 @@
     <string name="interfaces_style_title">Gaya sistem</string>
     <string name="interfaces_statusbar_title">Bilah status</string>
     <string name="interfaces_battery_title">Baterai</string>
-    <string name="buttons_title">Tombol</string>
-    <string name="buttons_summary">Volume bangun • Kontrol pemutaran</string>
-    <string name="quicksettings_title">Setelan Cepat</string>
-    <string name="quicksettings_summary">Penggeser Kecerahan • Kecerahan otomatis</string>
-    <string name="lockscreen_title">Layar Kunci</string>
+    <string name="lockscreen_title">Layar kunci</string>
     <string name="lockscreen_summary">Layar selalu aktif • Seni Media • Info pengisian daya</string>
     <string name="three_finger_gesture">Usap untuk menangkap layar</string>
     <string name="three_finger_gesture_summary">Usap tiga jari ke bawah untuk menangkap layar</string>
