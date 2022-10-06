@@ -28,8 +28,14 @@
             android:title="@string/xd_tap_about"
             android:summary="@string/xd_tap_about_summary"
             android:icon="@drawable/xd_about"
-            android:fragment="com.android.settings.deviceinfo.aboutxd.AboutXDFragments"
-            settings:layout="@layout/xd_pref_card_sin_tertiary"/>
+            settings:layout="@layout/xd_pref_card_sin_tertiary">
+        
+            <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="id.xyzprjkt.xd.xdcore"
+            android:targetClass="id.xyzprjkt.xd.xdcore.about.AboutActivity"/>
+        
+        </Preference>
 
         <!-- System Interfaces -->
         <Preference
