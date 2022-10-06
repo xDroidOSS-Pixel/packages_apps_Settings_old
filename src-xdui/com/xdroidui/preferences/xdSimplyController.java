@@ -67,7 +67,7 @@ public class xdSimplyController extends BasePreferenceController implements View
             @Override
             public boolean onLongClick(View view) {
                 final Intent kebeletEgg = new Intent();
-                kebeletEgg.setClassName("id.xyzprjkt.xd.kebeletegg", "id.xyzprjkt.xd.kebeletegg.kebeletMain");
+                kebeletEgg.setClassName("id.xyzprjkt.xd.xdcore", "id.xyzprjkt.xd.xdcore.egg.kebeletMain");
                 context.startActivity(kebeletEgg);
                 return false;
             }
