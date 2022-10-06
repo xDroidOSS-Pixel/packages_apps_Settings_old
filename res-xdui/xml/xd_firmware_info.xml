@@ -37,8 +37,8 @@
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="id.xyzprjkt.xd.updater"
-            android:targetClass="id.xyzprjkt.xd.updater.MainActivity"/>
+            android:targetPackage="id.xyzprjkt.xd.xdcore"
+            android:targetClass="id.xyzprjkt.xd.xdcore.updater.UpdaterActivity"/>
 
     </Preference>
 
