@@ -38,7 +38,6 @@ public class xdFullRevisionController extends BasePreferenceController {
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get("xdroidOSS " + XD_FULLREVISION_PROP,
-                mContext.getString(R.string.device_info_default));
+        return "xdroidOSS " + SystemProperties.get(XD_FULLREVISION_PROP, mContext.getString(R.string.device_info_default));;
     }
 }
