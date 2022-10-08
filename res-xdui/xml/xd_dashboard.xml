@@ -33,6 +33,7 @@
         android:title="@string/xd_dashboard_device"
         android:summary="xdroidOSS 3.5"
         android:layout="@layout/xd_dashboard_phone"
+        settings:controller="com.xdroidui.preferences.xdFullRevisionController"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"/>
 
     <Preference
