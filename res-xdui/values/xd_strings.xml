@@ -48,7 +48,7 @@
     <string name="xd_dashboard_greet12">Hey, There i\'am using xdroid</string>
     <string name="xd_dashboard_device">About phone</string>
     <string name="xd_dashboard_account">Account</string>
-    <string name="xd_dashboard_account_summary">Manage Your Google Account, Personal Safety and more</string>
+    <string name="xd_dashboard_account_summary">Manage all user profile available in this device here</string>
     <string name="xd_dashboard_network">Connectivity</string>
     <string name="xd_dashboard_portable_hotspot">Portable hotspot</string>
     <string name="xd_dashboard_conectivity">Devices</string>    
