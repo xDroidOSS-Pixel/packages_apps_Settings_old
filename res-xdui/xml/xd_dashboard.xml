@@ -24,8 +24,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="xd_my_account"
         android:order="-110"
-        android:layout="@layout/xd_dashboard_account"
-        android:fragment="com.android.settings.Settings$UserSettingsActivity"/>
+        android:layout="@layout/xd_dashboard_account"/>
 
     <Preference
         android:key="xd_my_phone"
