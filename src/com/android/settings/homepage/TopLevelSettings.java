@@ -207,7 +207,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         }
         super.onStart();
         initMnmlistAdditions();
-        initMyPhoneCard();
+        initMyAccountCard();
     }
 
     private boolean isOnlyOneActivityInTask() {
@@ -245,7 +245,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
     private void initPreferenceCard(){
 
-        LayoutPreference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
+        LayoutPreference myAccount = getPreferenceScreen().findPreference("xd_my_account");
+        Preference myPhone = getPreferenceScreen().findPreference("xd_my_phone");
         SwitchPreference switchPref = getPreferenceScreen().findPreference("airplane_mode");
 
         for (int i = 0; i < getPreferenceScreen().getPreferenceCount(); i++) {
@@ -255,8 +256,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_sin && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_bot && 
                 pref.getLayoutResource() != R.layout.xd_dashboard_pref_mid && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_pref_mnmlist && 
-                pref.getLayoutResource() != R.layout.xd_dashboard_phone ) {
+                pref.getLayoutResource() != R.layout.xd_dashboard_pref_mnmlist ) {
                 pref.setLayoutResource(R.layout.xd_dashboard_pref_mid_nosum);
             }
             if (pref.getKey().contains("wellbeing")){
@@ -264,17 +264,17 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             }
         }
         switchPref.setLayoutResource(R.layout.xd_dashboard_prefswitch_top);
+        myAccount.setLayoutResource(R.layout.xd_dashboard_account);
         myPhone.setLayoutResource(R.layout.xd_dashboard_phone);
     }
 
-    private void initMyPhoneCard(){
-        final LayoutPreference myPhonePref = getPreferenceScreen().findPreference("xd_my_phone");
+    private void initMyAccountCard(){
+        final LayoutPreference myAccountPref = getPreferenceScreen().findPreference("xd_my_account");
         final Activity context = getActivity();
 
-        View root = myPhonePref.findViewById(R.id.container);
-        ImageView avatarView = myPhonePref.findViewById(R.id.xd_avatar);
-        TextView ownerName = myPhonePref.findViewById(R.id.xd_phone_owner);
-        TextView deviceName = myPhonePref.findViewById(R.id.xd_phone_name);
+        View root = myAccountPref.findViewById(R.id.container);
+        ImageView avatarView = myAccountPref.findViewById(R.id.xd_avatar);
+        TextView ownerName = myAccountPref.findViewById(R.id.xd_account_owner);
         Bundle bundle = getArguments();
         avatarView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -294,10 +294,6 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             ownerName.setText(userInfo.name);
             avatarView.setImageDrawable(com.android.settingslib.Utils.getUserIcon(getActivity(), userManager, userInfo));
         }
-
-        final DeviceNamePreferenceController deviceNamePreferenceController =
-                new DeviceNamePreferenceController(context, "unused_key");
-        deviceName.setText(deviceNamePreferenceController.getSummary());
     }
 
     @Override
