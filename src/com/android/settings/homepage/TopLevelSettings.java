@@ -264,6 +264,15 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         ImageView avatarView = myAccountPref.findViewById(R.id.xd_avatar);
         TextView ownerName = myAccountPref.findViewById(R.id.xd_account_owner);
         Bundle bundle = getArguments();
+        
+        root.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                startActivity(intent);
+            }
+        });
 
         final int iconId = bundle.getInt("icon_id", 0);
         if (iconId == 0) {
