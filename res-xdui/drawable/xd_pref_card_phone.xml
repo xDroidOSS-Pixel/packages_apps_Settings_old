@@ -15,15 +15,16 @@
      limitations under the License.
 -->
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@android:color/transparent">
+    android:color="@color/xd_pref_ripple">
     <item android:id="@android:id/mask">
         <shape>
             <solid android:color="#FFFFFFFF" />
             <corners
                 android:topRightRadius="@dimen/xd_pref_card_radius-outer"
                 android:topLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomRightRadius="@dimen/xd_pref_card_radius-outer" />
+                android:bottomLeftRadius="@dimen/xd_pref_card_radius"
+                android:bottomRightRadius="@dimen/xd_pref_card_radius"
+                 />
         </shape>
     </item>
     <item android:id="@android:id/background">
@@ -32,8 +33,8 @@
             <corners
                 android:topRightRadius="@dimen/xd_pref_card_radius-outer"
                 android:topLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomLeftRadius="@dimen/xd_pref_card_radius-outer"
-                android:bottomRightRadius="@dimen/xd_pref_card_radius-outer" />
+                android:bottomLeftRadius="@dimen/xd_pref_card_radius"
+                android:bottomRightRadius="@dimen/xd_pref_card_radius" />
         </shape>
     </item>
 </ripple>
