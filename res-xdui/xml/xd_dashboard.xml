@@ -24,14 +24,8 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="xd_my_account"
         android:order="-110"
-        android:layout="@layout/xd_dashboard_account">
-        
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.google.android.gms"
-            android:targetClass="com.google.android.gms.app.settings.GoogleSettingsLink"/>
-            
-    </com.android.settingslib.widget.LayoutPreference>
+        android:layout="@layout/xd_dashboard_account"
+        android:fragment="com.android.settings.Settings$UserSettingsActivity"/>
 
     <Preference
         android:key="xd_my_phone"
