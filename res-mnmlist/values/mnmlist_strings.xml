@@ -134,4 +134,8 @@
 
     <string name="advanced_battery_preference_summary_google">Use Pixel Battery usage chart</string>
 
+    <!-- Captive portal -->
+    <string name="captive_portal_title">Connectivity check</string>
+    <string name="captive_portal_summary">Determine if the device can connect to the internet, by contacting Google. Also used to detect captive portals.</string>
+
 </resources>
