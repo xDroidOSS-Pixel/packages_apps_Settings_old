@@ -439,4 +439,7 @@ public class Settings extends SettingsActivity {
      * Activity for OneHandedSettings
      */
     public static class OneHandedSettingsActivity extends SettingsActivity { /* empty */ }
+
+    // SleepMode
+    public static class SleepModeActivity extends SettingsActivity {}
 }

@@ -64,6 +64,11 @@
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController"
         settings:keywords="@string/keywords_battery_adaptive_preferences" />
 
+    <Preference
+        android:key="sleep_mode"
+        android:title="@string/sleep_mode_title"
+        android:fragment="com.android.settings.fuelgauge.sleepmode.SleepMode" />
+
     <SwitchPreference
         android:key="battery_percentage"
         android:title="@string/battery_percentage"

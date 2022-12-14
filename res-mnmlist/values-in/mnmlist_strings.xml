@@ -203,4 +203,29 @@
     <string name="unlock_quick_unlock_control_title">Buka kunci cepat</string>
     <string name="unlock_quick_unlock_control_summary">Buka kunci secara otomatis ketika PIN/kata sandi yang benar dimasukkan</string>
 
+    <!-- Sleep Mode -->
+    <string name="sleep_mode_title">Mode tidur</string>
+    <string name="sleep_mode_summary_on">Aktif / <xliff:g name="auto_mode_summary" example="Never turn off automatically">%1$s</xliff:g></string>
+    <string name="sleep_mode_summary_off">Nonaktif / <xliff:g name="auto_mode_summary" example="Never turn on automatically">%1$s</xliff:g></string>
+    <string name="sleep_mode_ringer_title">Mode bunyi</string>
+    <string name="sleep_mode_ringer_off_title">Tidak diubah</string>
+    <string name="sleep_mode_ringer_vibrate_title">Mode getar</string>
+    <string name="sleep_mode_ringer_dnd_title">Mode jangan ganggu</string>
+    <string name="sleep_mode_ringer_silent_title">Mode diam</string>
+    <string name="sleep_mode_schedule_sunset">Matahari terbenam</string>
+    <string name="sleep_mode_schedule_sunrise">Matahari terbit</string>
+    <string name="sleep_mode_schedule_mixed_sunset">Aktifkan dari matahari terbenam hingga waktu yang diatur</string>
+    <string name="sleep_mode_schedule_mixed_sunrise">Aktifkan dari matahari terbenam hingga waktu yang diatur</string>
+    <string name="sleep_mode_toggles_title">Toggles</string>
+    <string name="sleep_mode_wifi_toggle_title">Matikan Wi-Fi</string>
+    <string name="sleep_mode_wifi_toggle_summary">Matikan Wi-Fi ketika mode tidur diaktifkan</string>
+    <string name="sleep_mode_bluetooth_toggle_title">Matikan Bluetooth</string>
+    <string name="sleep_mode_bluetooth_toggle_summary">Matikan Bluetooth ketika mode tidur diaktifkan</string>
+    <string name="sleep_mode_cellular_toggle_title">Matikan Data Seluler</string>
+    <string name="sleep_mode_cellular_toggle_summary">Matikan data seluler ketika mode tidur diaktifkan</string>
+    <string name="sleep_mode_location_toggle_title">Matikan Lokasi</string>
+    <string name="sleep_mode_location_toggle_summary">Matikan lokasi ketika mode tidur diaktifkan</string>
+    <string name="sleep_mode_sensors_toggle_title">Matikan Sensor</string>
+    <string name="sleep_mode_sensors_toggle_summary">Matikan sensor ketika mode tidur diaktifkan</string>
+    <string name="sleep_mode_display_text">Mode tidur memungkinkan Anda menonaktifkan layanan tertentu untuk membantu menghemat baterai dan mengheningkan ponsel saat Anda tidur.</string>
 </resources>
