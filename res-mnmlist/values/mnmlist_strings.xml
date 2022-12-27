@@ -177,4 +177,6 @@
     <string name="lockscreen_battery_info_title">Lock screen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negotiated charger max current and voltage, and battery temperature on lock screen while charging</string>
 
+    <string name="advanced_battery_preference_summary_google">Use Pixel Battery usage chart</string>
+
 </resources>
