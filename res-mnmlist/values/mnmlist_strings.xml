@@ -144,4 +144,7 @@
     <!-- Game Space -->
     <string name="game_space_title">Game Space</string>
     <string name="game_space_summary">Enhance your gaming experience</string>
+   
+    <string name="advanced_battery_preference_summary_google">Use Pixel Battery usage chart</string>
+
 </resources>
