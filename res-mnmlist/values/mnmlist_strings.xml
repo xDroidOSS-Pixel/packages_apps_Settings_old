@@ -100,10 +100,6 @@
     <string name="reset_auto_brightness_adjustment_summary">Let the system forget your brightness preference and reset it to the default one</string>
     <string name="reset_auto_brightness_adjustment_done">Auto brightness preference has been reset</string>
     
-    <!-- USB configuration -->
-    <string name="usb_default_config_title">USB configuration</string>
-    <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
-
     <!-- Battery temperature -->
     <string name="battery_temp">Battery temperature</string>
 
@@ -113,4 +109,5 @@
     <!-- Long press to copy wifi password -->
     <string name="copied_to_clipboard">Copied to clipboard</string>
     <string name="longpress_to_clipboard">Long-press to copy</string>
+
 </resources>
