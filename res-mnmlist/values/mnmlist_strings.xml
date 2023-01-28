@@ -121,4 +121,17 @@
     <!-- Statusbar Tuner -->
     <string name="statusbar_items_title">Statusbar items</string>
     <string name="statusbar_items_summary">Enable/Disable items in statusbar</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_intro_text">
+        Shows current network traffic speed in the status bar.
+        The monitor shows the speed dynamically such that it alternates between
+        upload and download speed each second
+    </string>
+    <string name="network_traffic_title">Network traffic indicator</string>
+    <string name="network_traffic_summary">Enable or disable network speed indicator in status bar</string>
+    <string name="network_traffic_primary_switch_title">Use network traffic indicator</string>
+    <string name="network_options_title">Options</string>
+    <string name="network_traffic_autohide_title">Hide network traffic indicator if inactive</string>
+    <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1 KB/s</string>
 </resources>
