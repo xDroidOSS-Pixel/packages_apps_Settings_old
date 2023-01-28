@@ -103,6 +103,7 @@ android_library {
         "SystemUIUnfoldLib",
         "xd.xdui-preference",
         "accountfeatureprovidergoogle",
+        "SettingsLibMainSwitchPreference",
     ],
 
     libs: [
