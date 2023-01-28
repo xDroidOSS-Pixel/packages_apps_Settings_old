@@ -102,6 +102,7 @@ android_library {
         "Settings-change-ids",
         "xd.xdui-preference",
         "accountfeatureprovidergoogle",
+        "SettingsLibMainSwitchPreference",
     ],
 
     libs: [
