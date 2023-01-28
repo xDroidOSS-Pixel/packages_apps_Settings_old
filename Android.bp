@@ -104,6 +104,7 @@ android_library {
         "xd.xdui-preference",
         "accountfeatureprovidergoogle",
         "google-securityhub",
+        "SettingsLibMainSwitchPreference",
     ],
 
     libs: [
