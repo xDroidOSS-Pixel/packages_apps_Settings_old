@@ -36,7 +36,7 @@
           android:title="@string/status_bar_double_tap_to_sleep_title"
           android:summary="@string/status_bar_double_tap_to_sleep_summary"
           android:defaultValue="false" />\
-
+     
      <!-- Reticker -->
      <com.xd.mnmlist.preferences.SystemSettingSwitchPreference
         android:key="reticker_status"
@@ -50,4 +50,19 @@
         android:title="@string/reticker_colored_title"
         android:summary="@string/reticker_colored_summary"
         android:defaultValue="false" />
+
+     <!-- Game Space -->
+     <PreferenceCategory
+        android:title="@string/interfaces_gaming_mode">
+          <Preference
+               android:key="game_settings"
+               android:title="@string/game_space_title"
+               android:summary="@string/game_space_summary">
+
+               <intent 
+                    android:action="android.intent.action.MAIN"
+                    android:targetPackage="io.chaldeaprjkt.gamespace"
+                    android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+          </Preference>
+     </PreferenceCategory>
 </PreferenceScreen>
