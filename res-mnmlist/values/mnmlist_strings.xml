@@ -34,6 +34,7 @@
     <string name="interfaces_battery_title">Battery</string>
     <string name="lockscreen_title">Lock screen</string>
     <string name="lockscreen_summary">Always on display • Media Art • Charge info</string>
+    <string name="interfaces_gaming_mode">Preference Game</string>
 
     <!-- mnmlist Summary -->
     <string name="show_mnmlist_summary_title">Mnmlist summary in dashboard</string>
@@ -46,10 +47,6 @@
     <!-- Hotspot extras -->
     <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
-
-    <!-- Game Space -->
-    <string name="game_space_title">Game Space</string>
-    <string name="game_space_summary">Enhance your gaming experience</string>
     
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
@@ -143,4 +140,8 @@
     <string name="face_unlock_method_title">Allow face unlock on lock screen</string>
     <string name="face_unlock_method_default">When the screen is turned on</string>
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
 </resources>
